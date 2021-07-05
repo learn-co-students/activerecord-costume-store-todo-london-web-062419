@@ -1,6 +1,6 @@
 require_relative 'spec_helper'
 
-describe "CostumeStore" do
+describe "CostumesStore" do
 
   it "has a name" do
     spirit_halloween = CostumeStore.create(
@@ -28,9 +28,9 @@ describe "CostumeStore" do
       name: "Ricky’s", 
       location: "375 Broadway",
       costume_inventory: 650,
-      num_of_employees: 17
+      number_of_employees: 17
     )
-    expect(CostumeStore.find_by(num_of_employees: 17)).to eq(rickys)
+    expect(CostumeStore.find_by(number_of_employees: 17)).to eq(rickys)
   end
 
   it "knows if it's still in business or permanently closed" do
